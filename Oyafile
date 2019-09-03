@@ -1,0 +1,12 @@
+Project: github.com/bilus/blabla
+Require:
+  github.com/bilus/circleci: v0.0.5
+Import:
+  circleci: github.com/bilus/circleci
+
+
+onMerge: |
+  echo "Releasing after merging to master"
+
+onPush: |
+  echo "Testing after pushing to feature branch"
